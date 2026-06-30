@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Luccas Henrique de Araujo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme"> <!-- Tema escuro definido como padrão inicial -->
+
+    <!-- HEADER: Contém a logo/nome e o menu de navegação fixo exigido -->
+    <header class="navbar">
+        <div class="logo">Luccas Henrique</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Botão para alternar entre os temas claro e escuro via JavaScript -->
+        <button id="theme-toggle" class="btn-theme">Alternar Tema</button>
+    </header>
+
+    <main>
+        <!-- SEÇÃO: SOBRE MIM -->
+        <section id="sobre" class="section-content">
+            <div class="container">
+                <h1>Sobre Mim</h1>
+                <div class="card">
+                    <p><strong>Nome:</strong> Luccas Henrique de Araujo</p>
+                    <p><strong>Idade:</strong> 28 anos</p>
+                    <p><strong>Naturalidade:</strong> São Paulo - SP</p>
+                    <hr>
+                    <h3>Hobbies</h3>
+                    <p>Aproveitar tempo de qualidade com a família, acompanhar esportes (com destaque especial para futebol e Fórmula 1), além de curtir jogos online, assistir a filmes e séries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: FORMAÇÃO -->
+        <section id="formacao" class="section-content">
+            <div class="container">
+                <h1>Formação acadêmica & Competências</h1>
+                
+                <div class="grid-formacao">
+                    <!-- Bloco de Graduação Atual -->
+                    <div class="card">
+                        <h2>Formação Atual</h2>
+                        <p class="highlight">Análise e Desenvolvimento de Sistemas</p>
+                        <p><strong>Instituição:</strong> UNINTER</p>
+                        <p><strong>Período:</strong> 2025 - 2027 (Cursando)</p>
+                    </div>
+
+                    <!-- Bloco de Cursos Complementares -->
+                    <div class="card">
+                        <h2>Cursos Complementares</h2>
+                        <p><strong>Excel 2016 - Avançado</strong></p>
+                        <p>SENAC TATUAPÉ — 2019</p>
+                    </div>
+
+                    <!-- Bloco de Soft Skills -->
+                    <div class="card">
+                        <h2>Soft Skills</h2>
+                        <ul class="skills-list">
+                            <li>Resolução de problemas</li>
+                            <li>Comunicação</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Proatividade</li>
+                        </ul>
+                    </div>
+
+                    <!-- Bloco de Idiomas -->
+                    <div class="card">
+                        <h2>Idiomas</h2>
+                        <p><strong>Inglês:</strong> Intermediário</p>
+                        <p><strong>Espanhol:</strong> Básico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PORTFÓLIO (Mantida em branco/placeholder conforme solicitado) -->
+        <section id="portfolio" class="section-content">
+            <div class="container">
+                <h1>Portfólio</h1>
+                <div class="card empty-portfolio">
+                    <p>Projetos em desenvolvimento. Em breve, novos repositórios e sistemas serão listados aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: CONTATO -->
+        <section id="contato" class="section-content">
+            <div class="container">
+                <h1>Contato</h1>
+                
+                <div class="contact-wrapper">
+                    <!-- Informações diretas de contato -->
+                    <div class="contact-info card">
+                        <h2>Informações de Diretas</h2>
+                        <p><strong>Telefone:</strong> (11) 96830-1348</p>
+                        <p><strong>E-mail:</strong> luccashenriquearaujo2301@gmail.com</p>
+                    </div>
+
+                    <!-- Formulário com validação obrigatória -->
+                    <div class="contact-form card">
+                        <h2>Envie uma Mensagem</h2>
+                        <form id="form-contato">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" placeholder="Digite seu nome completo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="text" id="email" placeholder="usuario@dominio.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: Rodapé simples da página -->
+    <footer>
+        <p>&copy; 2026 - Luccas Henrique de Araujo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
